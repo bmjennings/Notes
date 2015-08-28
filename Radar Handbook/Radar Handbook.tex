@@ -1,0 +1,38 @@
+\documentclass[]{article}
+
+%opening
+\title{Notes on Radar Handbook}
+\author{Brandon Jennings}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This article captures notes and equations from the book "Radar Handbook" by Merill Skolnik. It is meant to capture reference information, equations, and my musings on the content in the text.
+\end{abstract}
+
+\section{AN INTRODUCTION TO RADAR}
+
+Starting with the radar equation
+\begin{equation}
+P_{r} = \frac{P_{t}G_{t}}{4\pi R^{2}} \times \frac{\sigma}{4\pi R^{2}} \times A_{r}
+\end{equation}
+
+\noindent where: \newline
+$P_{r}$ - received signal power (in watts) \newline
+$P_{t}$ - radiated power (in watts) from an antenna \newline
+$G_{t}$ - antenna gain \newline
+$R$ - straight line distance (in meters) from radar antenna \newline
+$\sigma$ - target cross section (in square meters) \newline
+$A_{r}$ - antenna effective aperture area (square meters) \newline
+
+\noindent	The first term of the equation represents the power density at a distance $R$ meters away from the radar radiating the power. The second term represents the power density reflected from the target of cross section $\sigma$. The last term is the effective antenna aperture area, from which a received signal power is given.
+
+\noindent	By knowing the receiver minimum detectable signal $S_{min}$, the radar equation can be manipulated to produce a maximum range term.
+
+\begin{equation}
+R^{4}_{max} = \frac{P_{t} G_{t} A_{r} \sigma}{(4\pi)^{2} S_{min}}
+\end{equation}
+
+\end{document}
